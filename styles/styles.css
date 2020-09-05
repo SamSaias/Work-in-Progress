@@ -1,0 +1,143 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    background-color: #806C70;
+}
+
+#container  {
+    display: flex;
+    
+}
+
+#sidebar    {
+    display: flex;
+    flex-direction: column;
+    background-color: #3E2029;
+    align-items: center;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+}
+
+#content    {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    height: 100%;
+}
+
+#banner {
+    width: 100%; 
+}
+
+#pic    {
+    width: 50%;
+    margin-top: 30px;
+    border: 1px solid white;
+    border-radius: 27px;
+}
+
+#nav    {
+    margin-top: 10px;
+    padding-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    font-family: 'Caveat', cursive;   
+}
+
+.nav-buttons  {
+  font-size: 4vmin;
+  padding: 3.5vh;
+}
+
+a{
+    text-decoration: none;
+    color: white;    
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #DCB54C;
+    text-shadow: floralwhite 1px 1px 1px;
+}
+
+.nav-buttons:hover  {
+    font-size: 4.2vmin;
+}
+
+h1{
+    font-size: 5vmin;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 0 25px 0 25px;
+    font-family: 'Caveat', cursive;
+}
+
+h2{
+    font-size: 4vmin;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 0 25px 0 25px;
+    font-family: 'Caveat', cursive;
+}
+
+p{
+    font-size: 2.5vmin;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 0 35px 0 25px;
+    font-family: 'Space Mono', monospace;
+    line-height: 35px;
+    font-variant-ligatures: none;
+
+}
+
+em{
+    font-style: italic;
+}
+
+a{
+    padding: 0 10px;
+}
