@@ -66,6 +66,7 @@ body{
     flex-direction: column;
     margin-left: 20%;
     height: 100%;
+    width: 100%;
 }
 
 #banner {
@@ -140,4 +141,9 @@ em{
 
 a{
     padding: 0 10px;
+}
+
+#coming_soon    {
+    text-align: center;
+    font-size: 320px;
 }
