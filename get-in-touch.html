@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/d8a9cb2948.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet"> 
+        <title>
+            Contact | Web Dev in Progress
+        </title>
+    </head>
+    <body>
+        <main id="container">                 
+            <div id="sidebar">
+                <img id="pic" src="https://res.cloudinary.com/prin/image/upload/v1599160244/Copy_mf2y4c.jpg" alt="Picture of woman">
+                <nav id="nav">
+                    <ul>
+                        <li class="nav-buttons"><a href="index.html">About Me</a></li>
+                        <li class="nav-buttons"><a href="comingsoon.html">My Toolbox</a></li>
+                        <li class="nav-buttons"><a href="comingsoon.html">Projects</a></li>
+                        <li class="nav-buttons"><a href="comingsoon.html">Blog</a></li>
+                        <li class="nav-buttons"><a href="get_in_touch.html">Get in Touch</a></li>                        
+                    </ul>
+                </nav>
+                <div id="sidebar-social-links">        
+                    <a href="https://github.com/SamSaias" class="fab fa-github" class="social" target="_blank"></a>
+                    <a href="https://twitter.com/WebDevPrin" class="fab fa-twitter-square" class="social" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/samantha-saias-doughty/" class="fab fa-linkedin" class="social" target="_blank"></a>
+                    <a href="https://codepen.io/samsaias" class="fab fa-codepen" class="social" target="_blank"></a>
+                </div>  
+                
+            </div>
+            <div id="content">
+                <img id="banner" src="https://res.cloudinary.com/prin/image/upload/v1599160245/1_ujachm.png" alt="The Colosseum">        
+                <p class="form_intro" id="freelance">Accepting freelance clients!</p> 
+                <p class="form_intro">I am interested in bringing my skillset to a 100% remote team which utilizes their
+                efforts to encourage and create positive change in the world.</p> 
+                <p class="form_intro">If this sounds like you, and you would 
+                like to discuss a role or project, please submit the form below or connect on social.</p> 
+                <div class="contact-social-links">        
+                    <a href="https://twitter.com/WebDevPrin" class="fab fa-twitter-square" class="social" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/samantha-saias-doughty/" class="fab fa-linkedin" class="social" target="_blank"></a>
+                </div> 
+                <form id="contact_form" method="POST" data-netlify="true" name="contact">
+                    <label for="name" class="form_labels">Name:</label>
+                    <input class="input_fields" type="text" id="name" placeholder="Your name">
+                    <label for="email" class="form_labels">E-mail:</label>
+                    <input class="input_fields" type="email" id="email" required placeholder="E-mail I should reply to">
+                    <label for="description" class="form_labels">Description:</label>
+                    <textarea cols="32" rows="4" class="input_fields" type="text" id="description" placeholder="Any additional relevant information"></textarea>
+                    <input type="submit" id="submit" value="Let's Connect!">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
