@@ -44,11 +44,11 @@ table {
 
 body{
     background-color: #806C70;
+    color: white;
 }
 
 #container  {
-    display: flex;
-    
+    display: flex;    
 }
 
 #sidebar    {
@@ -95,10 +95,21 @@ body{
 
 a{
     text-decoration: none;
-    color: white;    
+    color: #DCB54C;
+    padding: 0 10px;
 }
 
-a:hover {
+.social-links a  {
+    color: white;
+    font-size: 3.5vh;
+}
+
+#content .social-links  {
+    align-self: center;
+}
+
+.code-link:hover, .link:hover {
+    font-size: 3vmin;
     text-decoration: underline;
     color: #DCB54C;
     text-shadow: floralwhite 1px 1px 1px;
@@ -106,6 +117,9 @@ a:hover {
 
 .nav-buttons:hover  {
     font-size: 4.2vmin;
+    text-decoration: underline;
+    color: #DCB54C;
+    text-shadow: floralwhite 1px 1px 1px;
 }
 
 h1{
@@ -132,15 +146,11 @@ p{
     font-family: 'Space Mono', monospace;
     line-height: 35px;
     font-variant-ligatures: none;
-
+    overflow: hidden;
 }
 
 em{
     font-style: italic;
-}
-
-a{
-    padding: 0 10px;
 }
 
 #coming_soon    {
@@ -177,6 +187,7 @@ a{
         position: absolute;
         width: 1px;
     }
+
 #description    {
     border-radius: 12px;
     width: 40vw;
@@ -186,6 +197,10 @@ a{
 
 #submit {
     margin-top: 30px;
+    background-color: white;
+    color: #3E2029;
+    border-radius: 27px;
+    padding: 5px;
 }
 
 .form_intro {
@@ -210,5 +225,58 @@ a{
     font-family: 'Space Mono', monospace;
     line-height: 35px;
     font-variant-ligatures: none;
-    background-color: white;
+    background-color: #3E2029;
+    color: white;
+    border-radius: 27px;
+    margin: 10px;
+}
+
+.project-block    {
+    display: flex;    
+    margin: 20px;
+    height: 33vh;
+    background-color: #3E2029;
+    border-radius: 27px;
+}
+
+.project-img    {
+    height: 25vh;
+    border-radius: 27px;
+}
+
+.img-block    {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px 10px 5px;
+}
+
+.project-stack  {
+    display: flex;
+    justify-content: center;
+    font-size: 4vh;
+    margin-top: 5px;    
+}
+
+.description-block  {
+    display: flex;
+    flex-direction: column;
+}
+
+.code-link  {
+    align-self: center;
+    padding-bottom: 4px;
+
+}
+
+.project-title  {
+    align-self: center;
+}
+
+.icon {
+    padding: 0 10px 0 10px;
+    color: white;
+}
+
+.project-title, .project-description    {
+    color: white;
 }
