@@ -16,7 +16,9 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    text-decoration: none;
+
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -42,142 +44,135 @@ table {
 	border-spacing: 0;
 }
 
-body{
+html    {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    width: 100vw;
+    justify-items: center;
     background-color: #806C70;
     color: white;
 }
 
-#container  {
-    display: flex;    
-}
-
-#sidebar    {
+nav    {
     display: flex;
-    flex-direction: column;
     background-color: #3E2029;
-    align-items: center;
-    width: 20%;
-    height: 100vh;
-    position: fixed;
-}
-
-#content    {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20%;
-    height: 100%;
-    width: 100%;
+    justify-content: center;
+    font-size: .8rem;
+    font-family: 'Caveat', cursive;
+    position: sticky;
+    top: 0px;
+    min-width: 100%;
 }
 
 #banner {
-    width: 100%; 
+    width: 100vw;
+    display: block;
+}
+
+ul  {
+    display: flex;
+    padding: .8rem 0 .8rem 0;
+    color: #DCB54C;
+}
+
+.nav-link, .content-link, .code-link {
+    color: #DCB54C;
+}
+
+.nav-link:hover .content-link:hover .code-link:hover {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-shadow: floralwhite 1px 1px 1px;
+}
+
+.nav-buttons    {
+    padding: 0 3vw 0 3vw;
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem 1rem 2rem;
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
 }
 
 #pic    {
-    width: 50%;
-    margin-top: 30px;
-    border: 1px solid white;
+    width: 40%;
+    margin-bottom: 3rem;
+    border: .17rem solid white;
     border-radius: 27px;
 }
 
-#nav    {
-    margin-top: 10px;
-    padding-top: 20px;
-    margin-bottom: 0;
-    padding-bottom: 15px;
-    font-family: 'Caveat', cursive;   
-}
-
-.nav-buttons  {
-  font-size: 4vmin;
-  padding: 3.5vh;
-}
-
-a{
-    text-decoration: none;
-    color: #DCB54C;
-    padding: 0 10px;
-}
-
-.social-links a  {
-    color: white;
-    font-size: 3.5vh;
-}
-
-#content .social-links  {
-    align-self: center;
-}
-
-.code-link:hover, .link:hover {
-    font-size: 3vmin;
-    text-decoration: underline;
-    color: #DCB54C;
-    text-shadow: floralwhite 1px 1px 1px;
-}
-
-.nav-buttons:hover  {
-    font-size: 4.2vmin;
-    text-decoration: underline;
-    color: #DCB54C;
-    text-shadow: floralwhite 1px 1px 1px;
-}
-
 h1{
-    font-size: 5vmin;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    line-height: 4rem;
+    font-size: 6rem;
+    margin: 3rem 0 3rem 0;
     padding: 0 25px 0 25px;
     font-family: 'Caveat', cursive;
 }
 
 h2{
-    font-size: 4vmin;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    line-height: 4rem;
+    font-size: 4rem;
+    margin: 3rem 0 3rem 0;
     padding: 0 25px 0 25px;
     font-family: 'Caveat', cursive;
 }
 
 p{
-    font-size: 2.5vmin;
-    text-align: justify;
-    margin-bottom: 20px;
-    padding: 0 35px 0 25px;
+    margin-bottom: 3rem;
+    padding: 0 .35em 0 .25em;
     font-family: 'Space Mono', monospace;
-    line-height: 35px;
     font-variant-ligatures: none;
-    overflow: hidden;
+    line-height: 4rem;
+    font-size: 2rem;
+
 }
 
-em{
-    font-style: italic;
+.social-links a  {
+    color: white;
+    font-size: 2.5rem;
+    padding: .35em;
 }
 
-#coming_soon    {
+
+
+
+footer {    
+    background-color: #3E2029;
+    min-width: 100%;
     text-align: center;
-    font-size: 320px;
+
 }
 
-#contact_form   {
-    margin: 20px 0 20px 0;
+#contact-form   {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
+    width: 42rem;
     background-color: #3E2029;
     align-self: center;
-    border-radius: 27px;
-    padding: 20px 0 20px 0;
+    border-radius: 3em;
+    padding: 2rem 0 2rem 0;
 }
 
-.input_fields    {
-    margin: 5px 0 5px 35px;
-    width: 40vw;
-    border-radius: 12px;
-    height: 4vh;    
+.input-fields    {
+    margin: 1rem 0 1rem 1rem;
+    width: 30rem;
+    border-radius: 1.5em;
+    height: 4rem;    
 }
 
-.form_labels    {
+.form-labels    {
         border: 0;
         clip: rect(0 0 0 0);
         height: 1px;
@@ -186,97 +181,54 @@ em{
         padding: 0;
         position: absolute;
         width: 1px;
-    }
+}
+
+nav, main {
+    margin-bottom: 5rem;
+}
+
+input, textarea     {
+    text-align: center;
+}
 
 #description    {
-    border-radius: 12px;
-    width: 40vw;
-    margin: 5px 0 5px 35px;
-    height: 12vh;
+    height: 6rem;
+    line-height: 6rem;
 }
-
 #submit {
-    margin-top: 30px;
+    margin-top: 2rem;
     background-color: white;
     color: #3E2029;
-    border-radius: 27px;
-    padding: 5px;
-}
-
-.form_intro {
-    font-size: 2.5vmin;
-    text-align: center;
-    margin-bottom: 10px;
-    padding: 0 14% 0 14%;
-    font-family: 'Space Mono', monospace;
-    line-height: 35px;
-    font-variant-ligatures: none;
-}
-
-.contact-social-links   {
-    align-self: center;
+    border-radius: 3rem;
+    padding: 1rem;
 }
 
 #freelance  {
-    font-size: 3vmin;
     text-align: center;
-    margin-bottom: 10px;
-    padding: 0 35px 0 25px;
+    margin-bottom: 3rem;
     font-family: 'Space Mono', monospace;
-    line-height: 35px;
+    line-height: 4rem;
     font-variant-ligatures: none;
     background-color: #3E2029;
     color: white;
-    border-radius: 27px;
-    margin: 10px;
+    border-radius: 3em;
+    padding: 0 3rem 0 3rem;
 }
 
-.project-block    {
-    display: flex;    
-    margin: 20px;
-    height: 33vh;
+.project-block  {
     background-color: #3E2029;
-    border-radius: 27px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 3em;
+    text-align: center;
 }
 
 .project-img    {
-    height: 25vh;
-    border-radius: 27px;
-}
-
-.img-block    {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 5px 10px 5px;
+    border-radius: 3em;
 }
 
 .project-stack  {
-    display: flex;
-    justify-content: center;
-    font-size: 4vh;
-    margin-top: 5px;    
-}
-
-.description-block  {
-    display: flex;
-    flex-direction: column;
-}
-
-.code-link  {
-    align-self: center;
-    padding-bottom: 4px;
-
-}
-
-.project-title  {
-    align-self: center;
-}
-
-.icon {
-    padding: 0 10px 0 10px;
     color: white;
-}
-
-.project-title, .project-description    {
-    color: white;
+    font-size: 2.5rem;
+    padding: .35em;
 }

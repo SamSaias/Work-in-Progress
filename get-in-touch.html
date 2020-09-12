@@ -10,47 +10,49 @@
         </title>
     </head>
     <body>
-        <main id="container">                 
-            <div id="sidebar">
-                <img id="pic" src="https://res.cloudinary.com/prin/image/upload/v1599160244/Copy_mf2y4c.jpg" alt="Picture of woman">
-                <nav id="nav">
-                    <ul>
-                        <li class="nav-buttons"><a href="index.html">About Me</a></li>
-                        <li class="nav-buttons"><a href="comingsoon.html">My Toolbox</a></li>
-                        <li class="nav-buttons"><a href="projects.html">Projects</a></li>
-                        <li class="nav-buttons"><a href="comingsoon.html">Blog</a></li>
-                        <li class="nav-buttons"><a href="get-in-touch.html">Get in Touch</a></li>                        
-                    </ul>
-                </nav>
-                <div class="social-links">        
-                    <a href="https://github.com/SamSaias" class="fab fa-github" class="social" target="_blank"></a>
-                    <a href="https://twitter.com/WebDevPrin" class="fab fa-twitter-square" class="social" target="_blank"></a>
-                    <a href="https://www.linkedin.com/in/samantha-saias-doughty/" class="fab fa-linkedin" class="social" target="_blank"></a>
-                    <a href="https://codepen.io/samsaias" class="fab fa-codepen" class="social" target="_blank"></a>
-                </div>  
-                
-            </div>
-            <div id="content">
-                <img id="banner" src="https://res.cloudinary.com/prin/image/upload/v1599160245/1_ujachm.png" alt="The Colosseum">        
-                <p class="form_intro" id="freelance">Accepting clients!</p> 
-                <p class="form_intro">I am interested in bringing my skillset to a 100% remote team which utilizes their
-                efforts to encourage and create positive change in the world.</p> 
-                <p class="form_intro">If this sounds like you, and you would 
-                like to discuss a role or project, please submit the form below or connect on social.</p> 
-                <div class="social-links">        
-                    <a href="https://twitter.com/WebDevPrin" class="fab fa-twitter-square" class="social" target="_blank"></a>
-                    <a href="https://www.linkedin.com/in/samantha-saias-doughty/" class="fab fa-linkedin" class="social" target="_blank"></a>
-                </div> 
-                <form id="contact_form" method="POST" data-netlify="true" name="contact" data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
-                    <label for="name" class="form_labels">Name:</label>
-                    <input class="input_fields" type="text" name="name" placeholder="Your name">
-                    <label for="email" class="form_labels">E-mail:</label>
-                    <input class="input_fields" type="email" name="email" required placeholder="E-mail I should reply to">
-                    <label for="description" class="form_labels">Description:</label>
-                    <textarea cols="32" rows="4" class="input_fields" type="text" id="description" placeholder="Any additional relevant information" name="description"></textarea>
-                    <input type="submit" id="submit" value="Let's Connect!" name="submit">
-                </form>
-            </div>
+
+        <header>
+            <img id="banner" src="https://res.cloudinary.com/prin/image/upload/v1599160245/1_ujachm.png" alt="The Colosseum">        
+        </header>
+        <nav>
+            <ul>
+                <li class="nav-buttons"><a class="nav-link" href="index.html">About Me</a></li>
+                <li class="nav-buttons"><a class="nav-link" href="comingsoon.html">My Toolbox</a></li>
+                <li class="nav-buttons"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-buttons"><a class="nav-link" href="comingsoon.html">Blog</a></li>
+                <li class="nav-buttons"><a class="nav-link" href="get-in-touch.html">Get in Touch</a></li>                        
+            </ul>
+        </nav>
+
+
+        <main>
+            <p class="form-intro" id="freelance">ACCEPTING CLIENTS</p> 
+            <p class="form-intro">I am interested in bringing my skillset to a 100% remote team which utilizes their
+            efforts to encourage and create positive change in the world.</p> 
+            <p class="form-intro">If this sounds like you, and you would 
+            like to discuss a role or project, please submit the form below or connect on social.</p> 
+        
+            <form id="contact-form" method="POST" data-netlify="true" name="contact" data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
+                <label for="name" class="form-labels">Name:</label>
+                <input class="input-fields" type="text" name="name" placeholder="Your name">
+                <label for="email" class="form-labels">E-mail:</label>
+                <input class="input-fields" type="email" name="email" required placeholder="E-mail I should reply to">
+                <label for="description" class="form-labels">Description:</label>
+                <textarea cols="32" rows="4" class="input-fields" type="text" id="description" placeholder="Any additional relevant information" name="description"></textarea>
+                <input type="submit" id="submit" value="Let's Connect!" name="submit">
+
+
         </main>
+
+        <footer>
+            <div class="social-links">        
+                <a href="https://github.com/SamSaias" class="fab fa-github" target="_blank"></a>
+                <a href="https://twitter.com/WebDevPrin" class="fab fa-twitter-square" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/samantha-saias-doughty/" class="fab fa-linkedin" target="_blank"></a>
+                <a href="https://codepen.io/samsaias" class="fab fa-codepen" target="_blank"></a>
+            </div>  
+
+        </footer>
+
     </body>
 </html>
